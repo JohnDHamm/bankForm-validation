@@ -1,0 +1,15 @@
+
+*:focus {outline: none;}
+
+/* when a field is considered invalid by the browser */
+.validate:focus:invalid { 
+    box-shadow: 0 0 5px #d45252;
+    border-color: #b03535;
+    /*background: #F26D6D;*/
+}
+
+.validate:focus:valid { 
+  /*  box-shadow: 0 0 5px green;
+    border-color: green;*/
+    background: #C9F5CC;
+}

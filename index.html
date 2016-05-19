@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Bank Form Test</title>
+	<link rel="stylesheet" href="validation.css">
+</head>
+<body>
+	<fieldset>
+		<legend>Name</legend>
+		<label for="first_name">First name: </label>
+		<input type="text" id="first_name">
+		<label for="middle_initial">Middle Initial: </label>
+		<input type="text" id="middle_initial" size="3">
+		<label for="last_name">Last name: </label>
+		<input type="text" id="last_name">
+	</fieldset>
+	<fieldset>
+		<legend>Address</legend>
+		<label for="street">Street: </label>
+		<input type="text" id="street">
+		<label for="city">City: </label>
+		<input type="text" id="city">
+		<label for="zip">Zip code: </label>
+		<input type="text" id="zip" size="6">
+	</fieldset>
+	<fieldset>
+		<legend>Job Info</legend>
+		<label for="jobRole">Occupation: </label>
+		<input type="text" id="jobRole">
+		<label for="employer">Employer: </label>
+		<input type="text" id="employer">
+		<p>Employer Address:</p>
+		<label for="emp_street">Street: </label>
+		<input type="text" id="emp_street">
+		<label for="emp_city">City: </label>
+		<input type="text" id="emp_city">
+		<label for="emp_zip">Zip code: </label>
+		<input type="text" id="emp_zip" size="6">
+	</fieldset>
+	<fieldset>
+		<legend>Loan Info</legend>
+		<select>
+			<option value="" disabled selected>Select loan type</option>
+			<option value="commercial">Commercial</option>
+			<option value="real_estate">Real Estate</option>
+			<option value="personal">Personal</option>
+			<option value="mortgage">Mortgage</option>
+		</select>
+		<label for="loanAmount">Loan Amount: $</label>
+		<input type="number" id="loanAmount">
+		<p>Choose the length of your loan:</p>
+		<input type="radio" id="loan5" name="loanLength" value="5">
+		<label for="loan5">5 years</label>
+		<input type="radio" id="loan10" name="loanLength" value="10">
+		<label for="loan5">10 years</label>
+		<input type="radio" id="loan15" name="loanLength" value="15">
+		<label for="loan5">15 years</label>
+		<p>Any special conditions?</p>
+		<input type="checkbox" id="downPayment" name="conditions" value="haveDownPayment">
+		<label for="downPayment">I have a down payment</label>
+		<input type="checkbox" id="non-resident" name="conditions" value="nonStateResident">
+		<label for="non-resident">Out-of-state resident</label>
+		<input type="checkbox" id="married" name="conditions" value="married">
+		<label for="married">Married</label>
+		<input type="checkbox" id="coSign" name="conditions" value="coSigned">
+		<label for="coSign">Loan will be co-signed</label>
+	</fieldset>
+	<p>Additional comments:</p>
+	<textarea name="comments" rows="6" cols="40" placeholder="Add additional comments here"></textarea>
+	<fieldset>
+		<legend>Contact Info</legend>
+		<label for="e-mail">Email: </label>
+		<input type="email" id="e-mail" placeholder="you@example.com" required pattern="*@*" class="validate">
+		<label for="telephone">Telephone number: </label>
+		<input type="tel" id="telephone" placeholder="555-555-5555">
+		<label for="linkedIn">LinkedIn URL: </label>
+		<input type="url" id="linkedIn" placeholder="http://www.linkedin.com/in/your profile" required pattern="(http|https)://.+" class="validate" size="50">
+	</fieldset>
+	<button>Submit Form</button>
+</body>
+</html>
